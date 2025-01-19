@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Launch Go program",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/cmd/restroom",
+            "env": {
+                "RESTROOM_LOG_LEVEL": "debug",
+                "RESTROOM_STDERR_LEVEL": "debug",
+                "RESTROOM_DEBUG": "true",
+                "RESTROOM_AUTH_FILE": "${workspaceFolder}/.env/example_auth.yaml",
+                "RESTROOM_PORT": "2899",
+            },
+            "args": [],
+            "showLog": true
+        }
+    ]
+}

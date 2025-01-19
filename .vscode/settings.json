@@ -1,0 +1,31 @@
+{
+    "files.autoSave": "afterDelay",
+    "git.postCommitCommand": "push",
+    "todo-tree.tree.groupedByTag": true,
+    "makefile.configureOnOpen": false,
+    "peacock.color": "cyan",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#00ffff",
+        "statusBarItem.hoverBackground": "#00cccc",
+        "statusBarItem.remoteBackground": "#00ffff",
+        "panel.border": "#33ffff",
+        "sash.hoverBorder": "#33ffff",
+        "sideBar.border": "#33ffff",
+        "statusBar.border": "#00ffff",
+        "tab.activeBorder": "#33ffff",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.remoteForeground": "#15202b"
+    },
+    "peacock.affectTitleBar": false,
+    "peacock.affectActivityBar": false,
+    "peacock.affectDebuggingStatusBar": false,
+    "peacock.affectEditorGroupBorder": false,
+    "peacock.affectPanelBorder": true,
+    "peacock.affectSashHover": true,
+    "peacock.affectSideBarBorder": true,
+    "peacock.affectStatusAndTitleBorders": true,
+    "peacock.affectTabActiveBorder": true,
+    "peacock.darkenLightenPercentage": 5,
+    "peacock.keepBadgeColor": false,
+    "peacock.keepForegroundColor": false
+}

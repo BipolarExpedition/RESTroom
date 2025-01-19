@@ -7,6 +7,7 @@
 
 # Build directories
 _build/
+build/bin/
 bin/
 out/
 
@@ -19,7 +20,7 @@ vendor/
 
 # IDE/editor-specific files
 .idea/
-*.vscode/
+#*.vscode/
 *.sublime-workspace
 *.sublime-project
 
@@ -30,13 +31,16 @@ Thumbs.db
 # Go-related files
 *.test    # Test binaries
 *.cover   # Coverage reports
+*.prof
+*.out
+test/coverage.out
 
 # Environment and secrets
 .env
 .secrets
 
 # Documentation and temporary files
-design_documents/
+design_documents/private/
 *.bak
 *.tmp
 *.swp

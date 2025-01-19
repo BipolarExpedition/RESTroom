@@ -31,4 +31,8 @@ design_documents/
 .secrets
 
 # Test files
-*.test
+*.test    # Test binaries
+*.cover   # Coverage reports
+*.prof
+*.out
+test/coverage.out

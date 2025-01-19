@@ -5,7 +5,7 @@ MAIN_BIN := ./cmd/restroom
 
 BUILD_BINARIES := build/bin
 
-.PHONY: lint build clean test run help
+.PHONY: lint build clean test run help coverage
 
 check-mod:
 	@if [ ! -f go.mod ]; then \
@@ -44,13 +44,18 @@ build: check-mod
 	done
 
 clean:
-	rm -f $(BUILD_BINARIES)/* $(CMD_DIRS)/*.test
+	@rm -f $(BUILD_BINARIES)/* $(CMD_DIRS)/*.test
 
 test: check-mod
-	go test -v ./...
+	@echo "Running tests"
+	@go test -v -coverprofile=test/coverage.out ./...
 
 run:
-	go run $(MAIN_BIN)
+	@go run $(MAIN_BIN)
+
+coverage: test
+	@echo "Generating coverage report"
+	@go tool cover -html=test/coverage.out
 
 help:
 	@echo "Available targets:"
@@ -58,6 +63,7 @@ help:
 	@echo "  clean          Remove all built binaries and test files."
 	@echo "  lint           Run all linting tasks (gofmt, govet, gocritic, errcheck)."
 	@echo "  test           Run all tests in the project."
+	@echo "  coverage       Generate a coverage report for the tests."
 	@echo "  build          Build all binaries from cmd/* and place them in $(BUILD_BINARIES)."
 	@echo "  run            Run the main application (defined as $(MAIN_BIN))."
 	@echo "  check-mod      Verify if go.mod exists, and prompt to initialize it if missing."

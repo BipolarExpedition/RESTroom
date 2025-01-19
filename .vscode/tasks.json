@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Lint Go Program",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "lint"
+            ],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": false
+            },
+
+        },
+        {
+            "label": "Coverage for Go Program",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "coverage"
+            ],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": false
+            },
+
+        }
+    ]
+}
