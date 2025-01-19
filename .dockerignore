@@ -1,0 +1,34 @@
+# Exclude everything unnecessary for building the Docker image
+
+# Binary files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Source control metadata
+.git/
+.gitignore
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+*.vscode/
+
+# Build directories
+_build/
+bin/
+out/
+
+# Documentation and local-only files
+design_documents/
+*.log
+*.trace
+
+# Environment and secrets
+.env
+.secrets
+
+# Test files
+*.test

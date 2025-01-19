@@ -1,0 +1,42 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build directories
+_build/
+bin/
+out/
+
+# Dependency directories (if using vendoring)
+vendor/
+
+# Logs and debugging files
+*.log
+*.trace
+
+# IDE/editor-specific files
+.idea/
+*.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Go-related files
+*.test    # Test binaries
+*.cover   # Coverage reports
+
+# Environment and secrets
+.env
+.secrets
+
+# Documentation and temporary files
+design_documents/
+*.bak
+*.tmp
+*.swp
