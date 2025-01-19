@@ -6,16 +6,15 @@ import (
 	"strings"
 
 	"github.com/labstack/echo/v4"
-	//log "github.com/sirupsen/logrus"
+	// log "github.com/sirupsen/logrus"
 )
 
 // TODO: Setup dynamic versioning
-//
-// var (
-// 	Version = "dev"
-// 	Commit  = "unknown"
-// 	BuildDate = "unknown"
-// )
+var (
+	Version   = "dev"
+	Commit    = "unknown"
+	BuildDate = "unknown"
+)
 
 // TODO: Must configure Makefile to build the binary with the version information
 
