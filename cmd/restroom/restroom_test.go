@@ -39,3 +39,18 @@ func TestGetEnvOrDefault(t *testing.T) {
 		})
 	}
 }
+
+// func TestGetEnvSettings(t *testing.T) {
+// 	type args struct {
+// 		envValues map[string]string
+// 	}
+// 	tests := []struct {
+// 		name string
+// 		args args
+// 		want *EnvSettings
+// 	}{
+// 		{"All defaults", args{map[string]string{}}, &EnvSettings{"warn", "error", "", "9988", false, "/etc/restroom/auth.yaml"}},
+// 		{"All values", args{map[string]string{
+// 			"RESTROOM_LOG_LEVEL":    "info",
+// 			"RESTROOM_STDERR_LEVEL": "debug",
+// 			"RESTROOM_IP":           "
